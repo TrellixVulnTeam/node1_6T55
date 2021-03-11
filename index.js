@@ -1,6 +1,18 @@
-const http = require('http');
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World!!');
+const express = require('express');
+const app = express();
+
+const path = require('path')
+
+app.listen(3000, () => {
+    console.log('Running at Port 3000...');
 });
-server.listen(3000);
+
+console.log(__filename);
+console.log(__dirname);
+
+//app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static('public'))
+
+app.use((req, res) => {
+    res.sendStatus(404);
+});
