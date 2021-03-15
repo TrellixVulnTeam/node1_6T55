@@ -1,10 +1,5 @@
-export class User {
-    public age: number
-    public constructor(age: number) {
-        this.age = age
-    }
-}
-
+import { User } from './user'
+import './list'
 
 const user = new User(44)
 

@@ -1,11 +1,4 @@
-import { User as LUser } from './index.js'
-
-export class User {
-    public age: number
-    constructor(age: number) {
-        this.age = age * 3
-    }
-}
+import { User as LUser } from './user'
 
 const user = new LUser(22)
 
