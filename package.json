@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "build-css": "node-sass --include-path public/scss public/scss/style.scss public/css/sample.css"
   },
   "keywords": [],
   "author": "",

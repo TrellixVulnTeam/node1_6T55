@@ -1,15 +1,11 @@
 h1 {
-    color:aqua;
-}
+  color: #3d3d3d; }
 
 img {
-    max-width: 30%;
-}
+  max-width: 40%; }
 
 .h1class {
-    font-size: large;
-}
+  font-size: large; }
 
 #h1id {
-    background-color: blueviolet;
-}
+  background-color: blueviolet; }
