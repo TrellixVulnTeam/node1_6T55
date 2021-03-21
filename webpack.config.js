@@ -8,11 +8,25 @@ module.exports = {
         filename: "index.js"
     },
     module: {
-        rules: [{
-            test: /\.ts$/,
-            use: 'ts-loader'
-        }]
+        rules: [
+            {
+                test: /\.ts$/,
+                use: 'ts-loader'
+            },
+            {
+                test: /\.js$/,
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            "@babel/preset-env"
+                        ]
+                    }
+                }]
+            }
+        ]
     },
+    target: ["web", "es5"],
     resolve: {
         modules: [
             "node_modules",
